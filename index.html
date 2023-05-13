@@ -1,0 +1,37 @@
+<DOCTYPE html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>@me.isaahzx</title>
+
+  		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h1> Amigar? </h1>
+		
+		<button id="nao">Não</button>
+		<button id="sim">Sim</button>
+
+		<script>
+			var nao = document.getElementById("nao");
+			nao.addEventListener("mouseover", function() {
+			var randomX = Math.floor(Math.random() * window.innerWidth);
+			var randomY = Math.floor(Math.random() * window.innerHeight);
+			nao.style.position = "absolute";
+			nao.style.top = randomY + "px";
+			nao.style.left = randomX + "px";
+			});
+
+			var sim = document.getElementById("sim");
+			sim.addEventListener("click", function() {
+			window.location.href = "https://contate.me/who_lc";
+			});
+		</script>
+
+		<footer>
+			<h2>By: @Who.lc</h2>
+		</footer>
+	</body>
+	</html>
